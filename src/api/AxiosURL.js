@@ -1,6 +1,6 @@
 import createAxios from "./Axios"
 // 请求配置默认值
-export let url = 'http://localhost:7709';
+export let url =process.env.NODE_ENV === "development" ? 'http://localhost:7709' : ''
 
 
 // login组件 请求登录数据
